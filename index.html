@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Währungsumrechner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Währungsumrechner</h1>
+        <div class="conversion-section">
+            <label for="amount">Betrag:</label>
+            <input type="number" id="amount" placeholder="Betrag eingeben">
+            <label for="from-currency">Von:</label>
+            <select id="from-currency"></select>
+            <label for="to-currency">Nach:</label>
+            <select id="to-currency"></select>
+            <button id="convert-btn">Umrechnen</button>
+            <p id="converted-result"></p>
+        </div>
+
+        <div class="features">
+            <button id="set-alert">Wechselkurs Alarm einstellen</button>
+            <button id="view-history">Währungsumrechnungsverlauf anzeigen</button>
+        </div>
+
+        <div id="alert-result"></div>
+        <div id="history-result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
